@@ -1,1 +1,1 @@
-# Browser Extension app using react
+# Browser Extension app built with react
