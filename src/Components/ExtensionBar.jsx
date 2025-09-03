@@ -1,19 +1,19 @@
 import { useState } from "react";
 
 const ExtensionBar = ({ Icon1, Theme1, Theme2, title2 }) => {
-  const [changeTheme, setChangeTheme] = useState("light");
+  const [changeTheme, setChangeTheme] = useState("dark");
 
   const toggleTheme = () => {
-    setChangeTheme(changeTheme === "light" ? "dark" : "light");
+    setChangeTheme(changeTheme === "dark" ? "light" : "dark");
     console.log("Theme button clicked!!");
   };
 
   return (
     <div
       className={`${
-        changeTheme === "light"
-          ? "bg-white text-black"
-          : "bg-slate-800 text-white"
+        changeTheme === "dark"
+          ? "bg-slate-800 text-white"
+          : "bg-white text-black"
       } flex justify-between font-bold text-2xl p-2 mb-2 md:mb-12 rounded-xl`}
     >
       <div className="gap-2 flex">
@@ -30,7 +30,7 @@ const ExtensionBar = ({ Icon1, Theme1, Theme2, title2 }) => {
         <div
           onClick={toggleTheme}
           className={`${
-            changeTheme === "light" ? "bg-red-500" : "bg-slate-700"
+            changeTheme === "dark" ? "bg-slate-700" : "bg-red-500"
           } cursor-pointer p-3 rounded-lg`}
         >
           {Theme2}
