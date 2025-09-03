@@ -35,11 +35,14 @@ const ExtensionCard = ({ firstIcon, title, description, toggleButton }) => {
       <div className="mt-8 flex justify-between items-center">
         <button
           onClick={deleteHandler}
-          className="border-1 border-gray-500 py-1 px-3 rounded-2xl"
+          className="border-1 border-gray-500 py-1 px-3 rounded-2xl cursor-pointer"
         >
           Remove
         </button>
-        <h2 onClick={toggleHandler} className="text-3xl m-0 text-orange-600">
+        <h2
+          onClick={toggleHandler}
+          className="text-3xl m-0 text-orange-600 cursor-pointer"
+        >
           {toggleButton}
         </h2>
       </div>
