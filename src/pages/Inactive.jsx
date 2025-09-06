@@ -8,6 +8,7 @@ import { IoGrid } from "react-icons/io5";
 import { IoSettingsSharp } from "react-icons/io5";
 import { FaMoon } from "react-icons/fa6";
 import { LuSunMoon } from "react-icons/lu";
+import MainPage from "../Components/layouts/MainPage";
 
 const Inactive = () => {
   return (
@@ -21,6 +22,7 @@ const Inactive = () => {
           Theme2={<LuSunMoon />}
         />
       </div>
+      <MainPage />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
         <ExtensionCard
           firstIcon={<FaStaffSnake />}
