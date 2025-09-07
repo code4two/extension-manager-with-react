@@ -22,7 +22,14 @@ const ExtensionCard = ({ firstIcon, title, description, toggleButton }) => {
   };
 
   return (
-    <div className="bg-gray-800 border-1 p-4 border-gray-500 rounded-xl">
+    <div
+      div
+      className={`${
+        changeTheme === "dark"
+          ? "bg-slate-800 border-gray-500 border-1 text-white"
+          : "bg-white text-black border-0"
+      } p-4 rounded-xl`}
+    >
       <div className="flex items-start gap-3">
         <div className="flex p-4 rounded-xl text-4xl bg-pink-600">
           {firstIcon}
@@ -35,7 +42,9 @@ const ExtensionCard = ({ firstIcon, title, description, toggleButton }) => {
       <div className="mt-8 flex justify-between items-center">
         <button
           onClick={deleteHandler}
-          className="border-1 border-gray-500 py-1 px-3 rounded-2xl cursor-pointer"
+          className={`${
+            changeTheme === "dark" ? "border-1 border-gray-500" : "border-black"
+          } py-1 px-3 rounded-2xl cursor-pointer`}
         >
           Remove
         </button>
