@@ -12,12 +12,11 @@ import { FaShapes } from "react-icons/fa";
 import { FaFaceSmile } from "react-icons/fa6";
 import { FaFlagCheckered } from "react-icons/fa6";
 import { FaMugHot } from "react-icons/fa6";
-import MainPage from "../Components/layouts/MainPage";
+import MainLayout from "../Components/layouts/MainLayout";
 
 const Active = () => {
   return (
     <div>
-      <div className="mb-3"></div>
       <div>
         <ExtensionBar
           Icon1={<IoSettingsSharp />}
@@ -26,7 +25,7 @@ const Active = () => {
           Theme2={<LuSunMoon />}
         />
       </div>
-      <MainPage />
+      <MainLayout />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
         <ExtensionCard
           firstIcon={<FaCloud />}
