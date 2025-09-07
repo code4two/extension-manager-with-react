@@ -12,6 +12,7 @@ import { FaShapes } from "react-icons/fa";
 import { FaFaceSmile } from "react-icons/fa6";
 import { FaFlagCheckered } from "react-icons/fa6";
 import { FaMugHot } from "react-icons/fa6";
+import MainPage from "../Components/layouts/MainPage";
 
 const Active = () => {
   return (
@@ -25,7 +26,7 @@ const Active = () => {
           Theme2={<LuSunMoon />}
         />
       </div>
-
+      <MainPage />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
         <ExtensionCard
           firstIcon={<FaCloud />}
