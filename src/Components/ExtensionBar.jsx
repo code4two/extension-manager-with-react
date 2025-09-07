@@ -1,19 +1,12 @@
-import { useState } from "react";
+import { useTheme } from "./ThemeContext";
 
 const ExtensionBar = ({ Icon1, Theme1, Theme2, title2 }) => {
-  const [changeTheme, setChangeTheme] = useState("dark");
-
-  const toggleTheme = () => {
-    setChangeTheme(changeTheme === "dark" ? "light" : "dark");
-    console.log("Theme button clicked!!");
-  };
+  const { changeTheme, toggleTheme } = useTheme();
 
   return (
     <div
       className={`${
-        changeTheme === "dark"
-          ? "bg-slate-800 text-white"
-          : "bg-white text-black"
+        changeTheme === "dark" ? "bg-slate-800" : "bg-white"
       } flex justify-between font-bold text-2xl p-2 mb-2 md:mb-12 rounded-xl`}
     >
       <div className="gap-2 flex">

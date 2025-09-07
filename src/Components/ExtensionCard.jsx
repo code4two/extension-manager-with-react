@@ -2,9 +2,17 @@ import { useState } from "react";
 
 import Backdrop from "../Components/Backdrop";
 import ModalCard from "./ModalCard";
+import { useTheme } from "./ThemeContext";
 
-const ExtensionCard = ({ firstIcon, title, description, toggleButton }) => {
+const ExtensionCard = ({
+  firstIcon,
+  title,
+  description,
+  toggleButton,
+  firstIconBg,
+}) => {
   const [showModal, setShowModal] = useState(false);
+  const { changeTheme } = useTheme();
 
   const deleteHandler = () => {
     setShowModal(true);
@@ -22,9 +30,17 @@ const ExtensionCard = ({ firstIcon, title, description, toggleButton }) => {
   };
 
   return (
-    <div className="bg-gray-800 border-1 p-4 border-gray-500 rounded-xl">
+    <div
+      className={`${
+        changeTheme === "dark"
+          ? "bg-slate-800 border-gray-500 border-1"
+          : "bg-white border-0"
+      } p-4 rounded-xl`}
+    >
       <div className="flex items-start gap-3">
-        <div className="flex p-4 rounded-xl text-4xl bg-pink-600">
+        <div
+          className={`${firstIconBg} flex text-blue-950 p-4 rounded-xl text-4xl`}
+        >
           {firstIcon}
         </div>
         <div className="flex flex-col">
@@ -35,7 +51,11 @@ const ExtensionCard = ({ firstIcon, title, description, toggleButton }) => {
       <div className="mt-8 flex justify-between items-center">
         <button
           onClick={deleteHandler}
-          className="border-1 border-gray-500 py-1 px-3 rounded-2xl cursor-pointer"
+          className={`${
+            changeTheme === "dark"
+              ? "border-1 border-gray-500"
+              : " border-1 border-gray-500"
+          } py-1 px-3 rounded-2xl cursor-pointer`}
         >
           Remove
         </button>

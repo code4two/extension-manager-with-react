@@ -37,6 +37,7 @@ const All = () => {
             "Quickly inspect page layout and visualize elements boundaries"
           }
           toggleButton={<IoToggle />}
+          firstIconBg="bg-green-300"
         />
         <ExtensionCard
           firstIcon={<FaBinoculars />}
@@ -45,6 +46,7 @@ const All = () => {
             "Instantly analyze and copy CSS from any webpage elements."
           }
           toggleButton={<IoToggle />}
+          firstIconBg="bg-sky-200"
         />
         <ExtensionCard
           firstIcon={<FaTruck />}
@@ -53,6 +55,7 @@ const All = () => {
             "Optimize browser resource usage to accelerate page loading."
           }
           toggleButton={<IoToggle />}
+          firstIconBg="bg-pink-100"
         />
         <ExtensionCard
           firstIcon={<FaStaffSnake />}
@@ -61,12 +64,14 @@ const All = () => {
             "Format, validates, and prettifies JSON responses in browser."
           }
           toggleButton={<MdToggleOff />}
+          firstIconBg="bg-pink-200"
         />
         <ExtensionCard
           firstIcon={<FaBowlRice />}
           title={"TabMaster Pro"}
           description={"Organize browser tabs into groups and sessions."}
           toggleButton={<IoToggle />}
+          firstIconBg="bg-purple-300"
         />
         <ExtensionCard
           firstIcon={<FaSoap />}
@@ -75,6 +80,7 @@ const All = () => {
             "Simulates various screens resolutions within the browser."
           }
           toggleButton={<MdToggleOff />}
+          firstIconBg="bg-blue-200"
         />
         <ExtensionCard
           firstIcon={<FaShapes />}
@@ -83,6 +89,7 @@ const All = () => {
             "Enables annotation and notes directly unto webpages for collaborative debugging."
           }
           toggleButton={<IoToggle />}
+          firstIconBg="bg-blue-300"
         />
         <ExtensionCard
           firstIcon={<IoGrid />}
@@ -91,24 +98,28 @@ const All = () => {
             "Overlay customizable grids and alignment grids on the web page."
           }
           toggleButton={<MdToggleOff />}
+          firstIconBg="bg-indigo-300"
         />
         <ExtensionCard
           firstIcon={<FaFaceSmile />}
           title={"Pallete Picker"}
           description={"Instantly extract color palette from any webpage."}
           toggleButton={<IoToggle />}
+          firstIconBg="bg-teal-300"
         />
         <ExtensionCard
           firstIcon={<FaFlagCheckered />}
           title={"LinkChecker"}
           description={"Scans and highlights broken links on any web page"}
           toggleButton={<IoToggle />}
+          firstIconBg="bg-orange-200"
         />
         <ExtensionCard
           firstIcon={<FaStapler />}
           title={"DOM Snapshots"}
           description={"Captures and export DOM structues quickly."}
           toggleButton={<MdToggleOff />}
+          firstIconBg="bg-cyan-200"
         />
         <ExtensionCard
           firstIcon={<FaMugHot />}
@@ -117,6 +128,7 @@ const All = () => {
             "Enhanced Developer console with advanced filtering and logging"
           }
           toggleButton={<IoToggle />}
+          firstIconBg="bg-green-300"
         />
       </div>
     </div>
