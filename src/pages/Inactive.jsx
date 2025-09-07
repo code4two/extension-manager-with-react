@@ -30,6 +30,7 @@ const Inactive = () => {
             "Format, validates, and prettifies JSON responses in browser."
           }
           toggleButton={<MdToggleOff />}
+          firstIconBg="bg-pink-200"
         />
         <ExtensionCard
           firstIcon={<FaSoap />}
@@ -38,6 +39,7 @@ const Inactive = () => {
             "Simulates various screens resolutions within the browser."
           }
           toggleButton={<MdToggleOff />}
+          firstIconBg="bg-blue-200"
         />
         <ExtensionCard
           firstIcon={<IoGrid />}
@@ -46,12 +48,14 @@ const Inactive = () => {
             "Overlay customizable grids and alignment grids on the web page."
           }
           toggleButton={<MdToggleOff />}
+          firstIconBg="bg-indigo-300"
         />
         <ExtensionCard
           firstIcon={<FaStapler />}
           title={"DOM Snapshots"}
           description={"Captures and export DOM structues quickly."}
           toggleButton={<MdToggleOff />}
+          firstIconBg="bg-cyan-200"
         />
       </div>
     </div>
