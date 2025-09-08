@@ -26,7 +26,7 @@ const ExtensionCard = ({
 
   const toggleHandler = () => {
     console.log("Toggle Clicked!!");
-    alert("Oops!! \n Under Construction \n Check back later!");
+    alert(" Oops!! \n Under Construction \n Check back later!");
   };
 
   return (
@@ -44,11 +44,11 @@ const ExtensionCard = ({
           {firstIcon}
         </div>
         <div className="flex flex-col">
-          <h2 className="m-0 font-bold text-xl mb-1">{title}</h2>
-          <p className="text-lg">{description}</p>
+          <h2 className="m-0 font-bold text-2xl mb-1">{title}</h2>
+          <p className="text-xl">{description}</p>
         </div>
       </div>
-      <div className="mt-8 flex justify-between items-center">
+      <div className="mt-8 flex justify-between items-center text-xl">
         <button
           onClick={deleteHandler}
           className={`${
@@ -61,7 +61,7 @@ const ExtensionCard = ({
         </button>
         <h2
           onClick={toggleHandler}
-          className="text-3xl m-0 text-orange-600 cursor-pointer"
+          className="text-4xl m-0 text-orange-600 cursor-pointer"
         >
           {toggleButton}
         </h2>
