@@ -1,6 +1,6 @@
 import ExtensionBar from "../Components/ExtensionBar";
 import ExtensionCard from "../Components/ExtensionCard";
-import { MdToggleOff } from "react-icons/md";
+import { PiToggleLeftFill } from "react-icons/pi";
 import { FaStaffSnake } from "react-icons/fa6";
 import { FaSoap } from "react-icons/fa";
 import { FaStapler } from "react-icons/fa6";
@@ -29,7 +29,7 @@ const Inactive = () => {
           description={
             "Format, validates, and prettifies JSON responses in browser."
           }
-          toggleButton={<MdToggleOff />}
+          toggleButton={<PiToggleLeftFill />}
           firstIconBg="bg-pink-200"
         />
         <ExtensionCard
@@ -38,7 +38,7 @@ const Inactive = () => {
           description={
             "Simulates various screens resolutions within the browser."
           }
-          toggleButton={<MdToggleOff />}
+          toggleButton={<PiToggleLeftFill />}
           firstIconBg="bg-blue-200"
         />
         <ExtensionCard
@@ -47,14 +47,14 @@ const Inactive = () => {
           description={
             "Overlay customizable grids and alignment grids on the web page."
           }
-          toggleButton={<MdToggleOff />}
+          toggleButton={<PiToggleLeftFill />}
           firstIconBg="bg-indigo-300"
         />
         <ExtensionCard
           firstIcon={<FaStapler />}
           title={"DOM Snapshots"}
           description={"Captures and export DOM structues quickly."}
-          toggleButton={<MdToggleOff />}
+          toggleButton={<PiToggleLeftFill />}
           firstIconBg="bg-cyan-200"
         />
       </div>
