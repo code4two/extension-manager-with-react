@@ -9,7 +9,7 @@ export function ThemeProvider({ children }) {
 
   const toggleTheme = () => {
     setChangeTheme(changeTheme === "dark" ? "light" : "dark");
-    console.log("Theme toggled:", changeTheme);
+    console.log("Theme Button Clicked!!");
   };
 
   return (
