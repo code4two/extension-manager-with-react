@@ -39,16 +39,16 @@ const ExtensionCard = ({
     >
       <div className="flex items-start gap-3">
         <div
-          className={`${firstIconBg} flex text-blue-950 p-4 rounded-xl text-4xl`}
+          className={`${firstIconBg} flex text-blue-950 p-4 rounded-xl text-2xl`}
         >
           {firstIcon}
         </div>
         <div className="flex flex-col">
           <h2 className="m-0 font-bold text-2xl mb-1">{title}</h2>
-          <p className="text-xl">{description}</p>
+          <p className="text-lg">{description}</p>
         </div>
       </div>
-      <div className="mt-8 flex justify-between items-center text-xl">
+      <div className="mt-8 flex justify-between items-center text-lg">
         <button
           onClick={deleteHandler}
           className={`${
