@@ -39,7 +39,7 @@ const ExtensionCard = ({
     >
       <div className="flex items-start gap-3">
         <div
-          className={`${firstIconBg} flex text-blue-950 p-4 rounded-xl text-2xl`}
+          className={`${firstIconBg} flex text-blue-950 p-3 rounded-xl text-3xl`}
         >
           {firstIcon}
         </div>
