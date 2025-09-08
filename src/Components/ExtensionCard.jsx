@@ -37,9 +37,9 @@ const ExtensionCard = ({
           : "bg-white border-0"
       } p-4 rounded-xl`}
     >
-      <div className="flex items-start gap-3">
+      <div className="flex items-start gap-4">
         <div
-          className={`${firstIconBg} flex text-blue-950 p-3 rounded-xl text-3xl`}
+          className={`${firstIconBg} flex text-blue-950 p-4 rounded-xl text-3xl`}
         >
           {firstIcon}
         </div>
