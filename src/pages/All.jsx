@@ -4,7 +4,7 @@ import { FaMoon } from "react-icons/fa6";
 import { LuSunMoon } from "react-icons/lu";
 import { FaCloud } from "react-icons/fa";
 import { IoToggle } from "react-icons/io5";
-import { MdToggleOff } from "react-icons/md";
+import { PiToggleLeftFill } from "react-icons/pi";
 import { IoSettingsSharp } from "react-icons/io5";
 import { FaBinoculars } from "react-icons/fa";
 import { FaTruck } from "react-icons/fa";
@@ -63,7 +63,7 @@ const All = () => {
           description={
             "Format, validates, and prettifies JSON responses in browser."
           }
-          toggleButton={<MdToggleOff />}
+          toggleButton={<PiToggleLeftFill />}
           firstIconBg="bg-pink-200"
         />
         <ExtensionCard
@@ -79,7 +79,7 @@ const All = () => {
           description={
             "Simulates various screens resolutions within the browser."
           }
-          toggleButton={<MdToggleOff />}
+          toggleButton={<PiToggleLeftFill />}
           firstIconBg="bg-blue-200"
         />
         <ExtensionCard
@@ -97,7 +97,7 @@ const All = () => {
           description={
             "Overlay customizable grids and alignment grids on the web page."
           }
-          toggleButton={<MdToggleOff />}
+          toggleButton={<PiToggleLeftFill />}
           firstIconBg="bg-indigo-300"
         />
         <ExtensionCard
@@ -118,7 +118,7 @@ const All = () => {
           firstIcon={<FaStapler />}
           title={"DOM Snapshots"}
           description={"Captures and export DOM structues quickly."}
-          toggleButton={<MdToggleOff />}
+          toggleButton={<PiToggleLeftFill />}
           firstIconBg="bg-cyan-200"
         />
         <ExtensionCard
